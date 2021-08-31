@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- ADD META DESCRIPTION, KEYWORD, ETC -->
+    <!-- <meta name="description" content="" /> -->
+    <title>Mehran Shakarami</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/particle-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+  </head>
+
+  <body>
+    <!--  #####################################################################
+                                     Hero
+            ##################################################################### -->
+
+    <section class="hero">
+      <!--  #####################################################################
+                                     Navbar
+            ##################################################################### -->
+
+      <div class="navbar-wrapper">
+        <div id="navbar" class="navbar shift">
+          <div class="container"></div>
+          <!-- <a href="#"><img class="logo" src="/images/logo.png" alt="logo" /> </a> -->
+          <img
+            id="mobile-cta"
+            class="mobile-menu"
+            src="images/menu.svg"
+            alt="Open Navigation"
+          />
+          <nav>
+            <img
+              id="mobile-exit"
+              class="mobile-menu-exit"
+              src="images/menu-close.svg"
+              alt="Close Navigation"
+            />
+            <ul class="nav-links">
+              <li class="current"><a href="#">Home</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#intro">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- <a class="nav-cta" href="#"><button>Contact</button></a> -->
+        </div>
+      </div>
+
+      <!--  #####################################################################
+                                     Particles section
+            ##################################################################### -->
+
+      <div class="particle-network-animation"></div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/particles.js"></script>
+
+      <!--  #####################################################################
+                                     Info in the hero
+            ##################################################################### -->
+
+      <div class="hero-text">
+        <h1>Mehran Shakarami</h1>
+        <p>Applied Mathematics | Machine Learning</p>
+
+        <div class="call-to-action">
+          <a class="btn" href="#publications"
+            ><i class="fa fa-angle-down"></i>View publications</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--  #####################################################################
+                                     Publications
+            ##################################################################### -->
+    <div id="overlay">
+      <p>DISMISS</p>
+    </div>
+    <section id="publications">
+      <div class="container">
+        <h2>Featured Publications</h2>
+        <hr class="title-line" />
+        <div class="papers-wrapper">
+          <div class="papers">
+            <div class="row">
+              <div class="column">
+                <div data-modal-target="#nudging-modal" class="paper">
+                  <div class="paper-background">
+                    <img src="images/nudging-people.jpg" alt="nudging people" />
+                    <div class="paper-title">
+                      <p>
+                        Steering the aggregative behavior of noncooperative
+                        agents: a nudge framework
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="paper-caption">
+                    <p>Nudging aggregative behavior</p>
+                  </div>
+                </div>
+              </div>
+              <div class="paper-modal-wrapper">
+                <div class="paper-modal" id="nudging-modal">
+                  <div class="paper-modal-header">
+                    <div class="paper-modal-title">
+                      <p>
+                        Steering the aggregative behavior of noncooperative
+                        agents: a nudge framework
+                      </p>
+                    </div>
+                    <button data-modal-close-btn class="modal-close-btn">
+                      <img
+                        src="images/menu-close.svg"
+                        alt="Close Description"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="paper-modal-body">
+                    <div class="paper-modal-field">Authors</div>
+                    <div class="paper-modal-value">
+                      Mehran Shakarami, Ashish Cherukuri, Nima Monshizadeh
+                    </div>
+                    <div class="paper-modal-field">Journal</div>
+                    <div class="paper-modal-value">
+                      arXiv preprint arXiv:2012.06376
+                    </div>
+                    <div class="paper-modal-field">Publication date</div>
+                    <div class="paper-modal-value">2020</div>
+                    <div class="paper-modal-field">Description</div>
+                    <div class="paper-modal-value">
+                      This paper considers the problem of steering the
+                      aggregative behavior of a population of noncooperative
+                      price-taking agents towards a desired behavior. Different
+                      from conventional pricing schemes where the price is fully
+                      available for design, we consider the scenario where a
+                      system regulator broadcasts a price prediction signal that
+                      can be different from the actual price incurred by the
+                      agents. The resulting reliability issues are taken into
+                      account by including trust dynamics in our model, implying
+                      that the agents will not blindly follow the signal sent by
+                      the regulator, but rather follow it based on the history
+                      of its accuracy, i.e, its deviation from the actual price.
+                      We present several nudge mechanisms to generate suitable
+                      price prediction signals that are able to steer the
+                      aggregative behavior of the agents to stationary as well
+                      as temporal desired aggregative behaviors. We provide
+                      analytical convergence guarantees for the resulting
+                      multi-components models. In particular, we prove that the
+                      proposed nudge mechanisms earn and maintain full trust of
+                      the agents, and the aggregative behavior converges to the
+                      desired one. The analytical results are complemented by a
+                      numerical case study of coordinated charging of plug-in
+                      electric vehicles.
+                    </div>
+                    <div class="btn-wrapper">
+                      <a
+                        class="btn"
+                        href="https://arxiv.org/abs/2012.06376"
+                        target="_blank"
+                        >Link</a
+                      >
+                      <a
+                        class="btn"
+                        href="files/Papers/Steering the aggregative behavior of noncooperative agents- a nudge framework.pdf"
+                        target="_blank"
+                        >Pdf</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div data-modal-target="#agg-modal" class="paper">
+                  <div class="paper-background">
+                    <img
+                      src="images/chess-net-upview.jpg"
+                      alt="Game theory portraied by chess pieces connected by lines"
+                    />
+                    <div class="paper-title">
+                      <p>
+                        Privacy and robustness guarantees in distributed
+                        dynamics for aggregative games
+                      </p>
+                    </div>
+                  </div>
+                  <div class="paper-caption">
+                    <p>Equilibrium seeking in games</p>
+                  </div>
+                </div>
+
+                <div class="paper-modal-wrapper">
+                  <div class="paper-modal" id="agg-modal">
+                    <div class="paper-modal-header">
+                      <div class="paper-modal-title">
+                        <p>
+                          Privacy and robustness guarantees in distributed
+                          dynamics for aggregative games
+                        </p>
+                      </div>
+                      <button data-modal-close-btn class="modal-close-btn">
+                        <img
+                          src="images/menu-close.svg"
+                          alt="Close Description"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="paper-modal-body">
+                      <div class="paper-modal-field">Authors</div>
+                      <div class="paper-modal-value">
+                        Mehran Shakarami, Claudio De Persis, Nima Monshizadeh
+                      </div>
+                      <div class="paper-modal-field">Journal</div>
+                      <div class="paper-modal-value">
+                        arXiv preprint arXiv:1910.13928
+                      </div>
+                      <div class="paper-modal-field">Publication date</div>
+                      <div class="paper-modal-value">2019</div>
+                      <div class="paper-modal-field">Description</div>
+                      <div class="paper-modal-value">
+                        This paper considers the problem of Nash equilibrium
+                        (NE) seeking in aggregative games, where the payoff
+                        function of each player depends on an aggregate of all
+                        players' actions. We present a distributed continuous
+                        time algorithm such that the actions of the players
+                        converge to NE by communicating to each other through a
+                        connected network. A major concern in communicative
+                        schemes among strategic agents is that their private
+                        information may be revealed to other agents or to a
+                        curious third party who can eavesdrop the
+                        communications. We address this concern for the
+                        presented algorithm and show that private information of
+                        the players cannot be reconstructed even if all the
+                        communicated variables are compromised. As agents may
+                        deviate from their optimal strategies dictated by the NE
+                        seeking protocol, we investigate robustness of the
+                        proposed algorithm against time-varying disturbances. In
+                        particular, we provide rigorous robustness guarantees by
+                        proving input to state stability (ISS) properties of the
+                        NE seeking dynamics. Finally, we demonstrate practical
+                        applications of our theoretical findings on two case
+                        studies; namely, on an energy consumption game and a
+                        charging coordination problem of electric vehicles.
+                      </div>
+                      <div class="btn-wrapper">
+                        <a
+                          class="btn"
+                          href="https://arxiv.org/abs/1910.13928"
+                          target="_blank"
+                          >Link</a
+                        >
+                        <a
+                          class="btn"
+                          href="files/papers/Privacy and robustness guarantees in distributed dynamics for aggregative games.pdf"
+                          target="_blank"
+                          >Pdf</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <div data-modal-target="#hgo-modal" class="paper">
+                  <div class="paper-background">
+                    <img
+                      src="images/high-gain-phase-portrait.jpg"
+                      alt="High gain observer, phase portrait"
+                    />
+                    <div class="paper-title">
+                      <p>
+                        Peaking attenuation of high-gain observers using
+                        adaptive techniques: state estimation and feedback
+                        control
+                      </p>
+                    </div>
+                  </div>
+                  <div class="paper-caption">
+                    <p>Adaptive-nonlinear observers</p>
+                  </div>
+                </div>
+
+                <div class="paper-modal-wrapper">
+                  <div class="paper-modal" id="hgo-modal">
+                    <div class="paper-modal-header">
+                      <div class="paper-modal-title">
+                        <p>
+                          Peaking attenuation of high-gain observers using
+                          adaptive techniques: state estimation and feedback
+                          control
+                        </p>
+                      </div>
+                      <button data-modal-close-btn class="modal-close-btn">
+                        <img
+                          src="images/menu-close.svg"
+                          alt="Close Description"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="paper-modal-body">
+                      <div class="paper-modal-field">Authors</div>
+                      <div class="paper-modal-value">
+                        Mehran Shakarami, Kasra Esfandiari, Amir Abolfazl
+                        Suratgar, Heidar Ali Talebi
+                      </div>
+                      <div class="paper-modal-field">Journal</div>
+                      <div class="paper-modal-value">
+                        IEEE Transactions on Automatic Control
+                      </div>
+                      <div class="paper-modal-field">Publication date</div>
+                      <div class="paper-modal-value">2020</div>
+                      <div class="paper-modal-field">Description</div>
+                      <div class="paper-modal-value">
+                        This article presents a new state estimation scheme
+                        using the second-level adaptation technique and multiple
+                        high-gain observers (MHGO) for improving the transient
+                        response and attenuating undesired peaks of high-gain
+                        observers (HGOs). The proposed method, MHGO, considers
+                        state estimation as a convex combination of provided
+                        information by multiple HGOs. In this regard, it is
+                        shown that there exist some constant parameters in such
+                        combination that result in perfect state estimation;
+                        then, an adaptive algorithm is employed for estimating
+                        those parameters. The stability of the proposed scheme
+                        and convergence of state estimation to the state of the
+                        plant are guaranteed. In addition, MHGO is proved to be
+                        able to provide a state estimation with smaller peaks in
+                        comparison to a single HGO. The performance of MHGO in
+                        the presence of measurement noise is also investigated.
+                        We consider existence of abrupt external disturbances as
+                        well. To alleviate the effects of those disturbances and
+                        attenuate their resulting peaking, we present a
+                        resetting scheme. Moreover, the output feedback control
+                        problem is considered, and it is demonstrated that a
+                        separation principle is valid for MHGO. Finally,
+                        simulation results illustrate that MHGO provides an
+                        accurate state estimation, and MHGO-based controller is
+                        able to recover the performance of state feedback
+                        controller.
+                      </div>
+                      <div class="btn-wrapper">
+                        <a
+                          class="btn"
+                          href="https://doi.org/10.1109/TAC.2020.2966111"
+                          target="_blank"
+                          >Link</a
+                        >
+                        <a
+                          class="btn"
+                          href="files/papers/Peaking attenuation of high-gain observers using adaptive techniques- state estimation and feedback control.pdf"
+                          target="_blank"
+                          >Pdf</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div data-modal-target="#ackf-modal" class="paper">
+                  <div class="paper-background">
+                    <img src="images/brain.jpg" alt="Brain shift estimation" />
+                    <div class="paper-title">
+                      <p>
+                        Intraoperative brain shift estimation using atlas of
+                        brain deformations and constrained Kalman filter
+                      </p>
+                    </div>
+                  </div>
+                  <div class="paper-caption">
+                    <p>Brain shift estimation</p>
+                  </div>
+                </div>
+
+                <div class="paper-modal-wrapper">
+                  <div class="paper-modal" id="ackf-modal">
+                    <div class="paper-modal-header">
+                      <div class="paper-modal-title">
+                        <p>
+                          Intraoperative brain shift estimation using atlas of
+                          brain deformations and constrained Kalman filter
+                        </p>
+                      </div>
+                      <button data-modal-close-btn class="modal-close-btn">
+                        <img
+                          src="images/menu-close.svg"
+                          alt="Close Description"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="paper-modal-body">
+                      <div class="paper-modal-field">Authors</div>
+                      <div class="paper-modal-value">
+                        Mehran Shakarami, Amir Abolfazl Suratgar, Heidar Ali
+                        Talebi
+                      </div>
+                      <div class="paper-modal-field">Journal</div>
+                      <div class="paper-modal-value">
+                        IEEE Transactions on Control Systems Technology
+                      </div>
+                      <div class="paper-modal-field">Publication date</div>
+                      <div class="paper-modal-value">2018</div>
+                      <div class="paper-modal-field">Description</div>
+                      <div class="paper-modal-value">
+                        Intraoperative brain shift decreases the accuracy of
+                        neuronavigation systems based on preoperative images. In
+                        this paper, this problem is addressed by calculating an
+                        estimation of brain shift which can be employed to
+                        update the preoperative brain images. Therefore, the
+                        precision of navigation can be improved. In this regard,
+                        a brain shift estimation method is proposed using an
+                        atlas of brain deformations and constrained Kalman
+                        filter (ACKF). In addition, it is proven that the
+                        obtained ACKF estimation is the best unbiased minimax
+                        estimation when the risk function is the estimation
+                        error variance. Furthermore, a comparison is performed
+                        between the ACKF and two existing methods, namely, CKF
+                        and atlas-based method. The comparison demonstrates that
+                        the ACKF results in a more accurate estimation and needs
+                        less computation time. Finally, the supremacy of the
+                        proposed ACKF method with respect to the CKF and
+                        atlas-based method is illustrated through simulation.
+                      </div>
+                      <div class="btn-wrapper">
+                        <a
+                          class="btn"
+                          href="https://doi.org/10.1109/TCST.2018.2849080"
+                          target="_blank"
+                          >Link</a
+                        >
+                        <a
+                          class="btn"
+                          href="files/papers/Intraoperative brain shift estimation using atlas of brain deformations and constrained Kalman filter.pdf"
+                          target="_blank"
+                          >Pdf</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a
+            class="btn"
+            href="https://scholar.google.com/citations?user=AI2EAlcAAAAJ&hl=en"
+            target="_blank"
+            >All publications</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--  #####################################################################
+                                     About me
+            ##################################################################### -->
+
+    <section id="intro" class="about-me">
+      <div class="container">
+        <!-- <h2>Intro</h2> -->
+        <h2>About Me</h2>
+        <hr class="title-line" />
+        <div class="description-wrapper">
+          <div class="profile-img">
+            <img
+              src="images/mehran-profile-square.png"
+              alt="Mehran Shakarami profile picture"
+            />
+          </div>
+          <div class="profile-img-description">
+            <p>Hi, it's me!</p>
+            <p>
+              I design algorithms that solve problems. I'm in the last year of
+              my PhD at the University of Groningen, and my research is about
+              forming collaboration between self-interested agents. I find
+              solutions using tools from optimization, control and game theory.
+            </p>
+            <p>
+              I'm also passionate about machine and deep learning and using data
+              to solve problems. My main interest is building data-driven models
+              that answer complex questions.
+            </p>
+            <p>
+              When I'm not building algorithms, you'll find me learning piano,
+              solving
+              <a
+                href="https://www.worldcubeassociation.org/persons/2011SHAK01"
+                target="_blank"
+                >cubes</a
+              >
+              or working out.
+            </p>
+          </div>
+        </div>
+
+        <div class="btn-wrapper">
+          <a class="btn" href="files/MehranShakarami.pdf" target="_blank"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--  #####################################################################
+                                     Contact me
+            ##################################################################### -->
+    <section id="contact" class="contact-me">
+      <div class="container">
+        <p class="contact-me-header">
+          Want to work together or have any questions?
+        </p>
+        <div class="contact">
+          <div class="get-in-touch">
+            <p>
+              Send me a message at
+              <a href="mailto:mehran.shakarami@gmail.com"
+                >mehran.shakarami@gmail.com</a
+              >, or fill in the contact form.
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <form
+              name="contact"
+              data-netlify="true"
+              method="POST"
+              action="pages/success.html"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <label for="message">Message *</label>
+              <div class="form-group">
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="btn-wrapper">
+                <!-- <a class="btn send-btn">Send email</a> -->
+                <button type="submit" class="btn send-btn">
+                  Submit <i class="fa fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-wrapper">
+          <div class="row">
+            <div class="column">
+              <p class="copyright-text">
+                &copy; 2021 Mehran Shakarami. Source code on
+                <a
+                  href="https://github.com/mehranshakarami/mehranshakarami.com.git"
+                  target="_blank"
+                  >GitHub</a
+                >.
+              </p>
+            </div>
+            <div class="social-media column">
+              <div>
+                <ul class="media-icons">
+                  <!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+                  <li class="list-item">
+                    <a
+                      href="https://www.linkedin.com/in/mehran-shakarami-433b2195"
+                      class="fa fa-linkedin"
+                      target="_blank"
+                    ></a>
+                  </li>
+                  <li class="list-item">
+                    <a
+                      href="https://github.com/mehranshakarami"
+                      class="fa fa-github"
+                      target="_blank"
+                    ></a>
+                  </li>
+                  <li class="list-item">
+                    <a
+                      href="https://scholar.google.com/citations?user=AI2EAlcAAAAJ&hl=en"
+                      class="ai ai-google-scholar ai-sm"
+                      target="_blank"
+                    ></a>
+                  </li>
+                  <!-- <li class="list-item">
+                  <a href="#" class="fa fa-youtube"></a>
+                </li> -->
+                  <li class="list-item">
+                    <a
+                      href="mailto:mehran.shakarami@gmail.com"
+                      class="fa fa-envelope"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------
+                  Scripts
+    ---------------------------------->
+
+    <!-- Navbar in mobile mode -->
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      const nav = document.querySelector("nav");
+      const mobileBtnExit = document.getElementById("mobile-exit");
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+      // Close navbar by click on links
+      const mobileNavLinks = document.querySelectorAll(".nav-links li a");
+      mobileNavLinks.forEach((mobileNavLink) => {
+        mobileNavLink.addEventListener("click", () => {
+          nav.classList.remove("menu-btn");
+        });
+      });
+    </script>
+
+    <!-- Transparent navbar at y=0 -->
+    <script>
+      const body = document.body;
+      window.addEventListener("scroll", () => {
+        const currenScroll = window.pageYOffset;
+        if (currenScroll <= 0) {
+          body.classList.remove("navbar-transparent");
+        }
+        if (currenScroll > 0) {
+          body.classList.add("navbar-transparent");
+        }
+      });
+    </script>
+
+    <!-- Paper darken on hover -->
+    <script>
+      const selectedPaperItems = document.querySelectorAll(".paper");
+
+      selectedPaperItems.forEach((selectedPaperItem) => {
+        selectedPaperItem.addEventListener("mouseover", () => {
+          selectedPaperItem.childNodes[1].classList.add(
+            "paper-background-darken"
+          );
+        });
+
+        selectedPaperItem.addEventListener("mouseout", () => {
+          selectedPaperItem.childNodes[1].classList.remove(
+            "paper-background-darken"
+          );
+        });
+      });
+    </script>
+
+    <!-- For  paper modal -->
+    <script>
+      const openModalButtons = document.querySelectorAll("[data-modal-target]");
+      const closeModalButtons = document.querySelectorAll(
+        "[data-modal-close-btn]"
+      );
+      const overlay = document.getElementById("overlay");
+
+      openModalButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const modal = document.querySelector(button.dataset.modalTarget);
+          openModal(modal);
+        });
+      });
+
+      closeModalButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const modal = button.closest(".paper-modal");
+          closeModal(modal);
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        const modals = document.querySelectorAll(".paper-modal.active");
+        modals.forEach((modal) => {
+          closeModal(modal);
+        });
+      });
+
+      window.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          const modals = document.querySelectorAll(".paper-modal.active");
+          modals.forEach((modal) => {
+            closeModal(modal);
+          });
+        }
+      });
+
+      function openModal(modal) {
+        if (modal == null) return;
+        modal.classList.add("active");
+        overlay.classList.add("active");
+        // avoid scroll when popup is active
+        $("body").css("overflow", "hidden");
+      }
+
+      function closeModal(modal) {
+        if (modal == null) return;
+        modal.classList.remove("active");
+        overlay.classList.remove("active");
+        // avoid scroll when popup is active
+        $("body").css("overflow", "auto");
+      }
+    </script>
+  </body>
+</html>
