@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.particle-network-animation {
+  height: 300px;
+}
+
+.hero-text {
+  height: unset;
+  top: 130px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  pointer-events: all;
+}
+
+/* **************************
+ Custom menu 
+ *****************************/
+.dropmenu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.dropmenu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-box {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-box label {
+  color: unset;
+}
+
+.select-box .options-container {
+  /* background: var(--navbar-color); */
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: solid 4px;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 1;
+}
+
+.selected {
+  /* background: var(--primary-color); */
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: solid 4px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  position: relative;
+  width: 100%;
+  order: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.selected p {
+  margin: 15px 0 15px 20px;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.select-box .option p {
+  margin: 0;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* line-height: 20px; */
+}
+
+.selected::after {
+  content: "";
+  background: url("../images/arrow-down.svg");
+  filter: invert(68%) sepia(92%) saturate(5894%) hue-rotate(249deg)
+    brightness(98%) contrast(106%);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 15px;
+  top: 8px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  /* overflow-y: scroll; */
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -10px;
+}
+
+.select-box .option {
+  /* padding: 12px 24px; */
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.select-box .option:not(:last-child) {
+  border-bottom: solid 1px;
+}
+
+.select-box .option:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.select-box label {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+/* **************************
+ Publications
+ *****************************/
+.papers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paper .info {
+  display: flex;
+  align-items: center;
+}
+
+.paper {
+  border-radius: 10px;
+  padding: 20px;
+  cursor: unset;
+}
+
+.paper .info .journal-thumb {
+  border: solid;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #38b000;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.paper .info .conference-thumb {
+  border: solid;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #e85d04;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.paper .info .preprint-thumb {
+  border: solid;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #7b2cbf;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.paper .title p {
+  margin: 10px 0 5px 0;
+  line-height: unset;
+}
+
+.paper .authors span {
+  font-weight: 700;
+}
+
+.paper .btn-wrapper {
+  /* text-align: left; */
+  margin-top: 10px;
+}
+
+.paper .btn {
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 3px 7px;
+  margin: 5px 5px 5px 0;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+/* **************************
+ Filtering publications
+ *****************************/
+.journal,
+.conference,
+.preprint {
+  /* max-height: 0; */
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.jourals-selected .conference,
+.jourals-selected .preprint,
+.preprints-selected .conference,
+.preprints-selected .journal,
+.conferences-selected .journal,
+.conferences-selected .preprint {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  /* display: none; */
+}
+/* **************************
+ Responsive editions 
+ *****************************/
+
+@media only screen and (max-width: 350px) {
+  .select-box {
+    width: 200px;
+  }
+  .select-box p {
+    font-size: 15px !important;
+    font-size: 1.5rem !important;
+  }
+  .select-box .option {
+    padding-left: 10px;
+  }
+  .selected p {
+    margin: 10px 0 10px 10px;
+  }
+  .selected::after {
+    width: 25px;
+    right: 4px;
+    top: 7px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .select-box {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .paper {
+    max-width: unset;
+    width: 700px;
+  }
+  .paper .info,
+  .paper .authors {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  .paper .title p {
+    font-size: 23px;
+    font-size: 2.3rem;
+  }
+}
